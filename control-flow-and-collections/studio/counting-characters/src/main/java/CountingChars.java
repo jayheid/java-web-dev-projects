@@ -13,27 +13,28 @@ public class CountingChars {
         Scanner input = new Scanner(System.in);
 
         System.out.println("Please provide a string to evaluate: ");
-        String myString = input.nextLine().toLowerCase();
+        String myString = input.nextLine().toLowerCase(); // Bonus Mission 2: Convert input to lower case for evaluation.
 
         char[] charactersInString = myString.toCharArray();
         // Get student names and grades
         for (char i : charactersInString) {
-
-            // Check if i in charCounter key set
-            if (charCounter.containsKey(i)) {
-                // if yes:
-                // charCounter.key(i).value += 1
+            // Bonus Mission 3: Check if character is letter prior to adding to hash map
+            if (Character.isLetter(i)) {
+                // Check if i in charCounter key set
+                if (charCounter.containsKey(i)) {
+                    // if yes:
+                    // charCounter.key(i).value += 1
 //                int incrementValue = charCounter.get(i);
-                charCounter.put(i, charCounter.get(i) + 1);
+                    charCounter.put(i, charCounter.get(i) + 1);
 
-            } else {
-                // if no:
-                // create new key for i
-                // value for key = 1
-                charCounter.put(i, 1);
+                } else {
+                    // if no:
+                    // create new key for i
+                    // value for key = 1
+                    charCounter.put(i, 1);
 
+                }
             }
-
         }
 
         System.out.println(charCounter);
