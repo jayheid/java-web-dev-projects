@@ -13,7 +13,7 @@ public class CountingChars {
         Scanner input = new Scanner(System.in);
 
         System.out.println("Please provide a string to evaluate: ");
-        String myString = input.nextLine();
+        String myString = input.nextLine().toLowerCase();
 
         char[] charactersInString = myString.toCharArray();
         // Get student names and grades
