@@ -32,6 +32,4 @@ public class HashMapPractice {
             System.out.println("ID: " + student.getKey() + " Name: " + student.getValue());
         }
     }
-
-
 }
