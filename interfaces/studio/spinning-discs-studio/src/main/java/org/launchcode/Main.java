@@ -10,6 +10,8 @@ public class Main {
         CD myCd1 = new CD("Dark Side of the Moon", 700, "Music", "CD-R");
 
         // TODO: Call each CD and DVD method to verify that they work as expected.
+        myCd.setName("Animals");
+        myCd.getName();
         myCd.spinDisc();
         myDvd.spinDisc();
         myCd.reportInfo();
