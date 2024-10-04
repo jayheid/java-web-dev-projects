@@ -5,12 +5,14 @@ abstract class BaseDisc{
     private double capacity;
     private String content;
     private String discType;
+
     public BaseDisc(String name, double capacity, String contents, String discType) {
         this.name = name;
         this.capacity = capacity;
         this.content = contents;
         this.discType = discType;
     }
+
     public String getDiscType() {
         return discType;
     }
